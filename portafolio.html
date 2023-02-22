@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/blobz.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div id="content" class="p-4 p-md-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca.html">Acerca</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <div class="row g-0">
+            <div class="col-md-12 d-flex align-items-center">
+                <div class="p-5">
+                    <h1 class="section-title text-start text-white
+                            text-uppercase mb-3">Acerca de mi portafolio</h1>
+                    <p class="text-white mb-4">Mi portafolio contiene
+                        pequeños proyectos de diseño web que han sido
+                        cuidadosamente diseñados y desarrollados para
+                        cumplir con los objetivos específicos de cada
+                        cliente. Aunque son pequeños, cada proyecto
+                        representa una oportunidad para demostrar mi
+                        habilidad para crear soluciones de diseño web
+                        únicas, efectivas y personalizadas. Si estás
+                        buscando inspiración o simplemente quieres ver
+                        algunos ejemplos de lo que puedo hacer, no dudes en
+                        navegar por mi portafolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title text-primary
+                        text-uppercase">Mi portafolio</h6>
+                <h1 class="mb-5">Descubre mis <span class="text-primary
+                            text-uppercase">proyectos</span></h1>
+            </div>
+            <div class="container">
+                <div class="row pt-5 m-auto">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <section class="card card-custom bg-white
+                                border-white border-0">
+                            <div class="card-custom-img" style="background-image:
+                                    url(https://cdn.pixabay.com/photo/2017/09/06/13/21/blue-2721435_960_720.jpg);">
+                            </div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                    auto">
+                                <h4 class="card-title">Pokedex</h4>
+                                <p class="card-text">Este proyecto trata
+                                    de buscar un pokemon
+                                    utilizando la Poke Api <a>la
+                                        busqueda de vuelve</a>
+                                    datos generales del pokemon.</p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                    inherit; border-color: inherit;">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn
+                                        btn-primary" data-toggle="modal" data-target="#modal-pokemon">
+                                    Buscar
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal-pokemon">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Encuentra
+                                                    tu pokemon</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container
+                                                        shadow-sm">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-12">
+                                                            <form id="search-form" class="inputBox
+                                                                    form-group">
+                                                                <label for="" class="banner">Buscar
+                                                                    pokemon</label>
+                                                                <input type="text" name="" id="pokemonName" required>
+                                                                <span>Nombre
+                                                                    o Id</span>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div id="app" class="pull-right"></div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="btn-group">
+                                                        <a id="searchPokemon" class="btn
+                                                                enter">
+                                                            <li class="fa
+                                                                    fa-search"></li>Buscar
+                                                        </a>
+                                                        <a id="clearPokemon" class="btn
+                                                                enter">
+                                                            <li class="fa
+                                                                    fa-trash-o"></li>Limpiar
+                                                        </a>
+
+                                                        <button type="button" class="btn
+                                                                enter" data-bs-dismiss="modal"
+                                                            aria-label="Close">Cerrar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <div class="card card-custom bg-white
+                                border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                    url(https://cdn.pixabay.com/photo/2022/06/15/18/29/landscape-7264427_960_720.png);"></div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/dragon-bal.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                    auto">
+                                <h4 class="card-title">Dragon Ball Z</h4>
+                                <p class="card-text">Este proyecto
+                                    trata de buscar un pokemon
+                                    utilizando la Poke Api <a>la
+                                        busqueda de vuelve</a>
+                                    datos generales del pokemon.</p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                    inherit; border-color: inherit;">
+                                <a href="#" class="btn btn-primary">Buscar
+                                    Pokemon</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <div class="card card-custom bg-white
+                                border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                    url(https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844226_960_720.png);"></div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                    auto">
+                                <h4 class="card-title">Tiempo</h4>
+                                <p class="card-text">Este
+                                    proyecto trata de buscar un
+                                    pokemon
+                                    utilizando la Poke Api <a>la
+                                        busqueda de vuelve</a>
+                                    datos generales del pokemon.</p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                    inherit; border-color:
+                                    inherit;">
+
+
+                                <!-- Copy until here -->
+                                <button type="button" class="btn
+                                        btn-primary" data-toggle="modal" data-target="#modal-clima">
+                                    Buscar
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal-clima">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Conoce
+                                                    el clima de tu cuidad
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container
+                                                        shadow-sm">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-12">
+                                                        </div>
+                                                        <div class="search-form form-group">
+                                                            <form id="search-form">
+                                                                <div class="searchbox inputBox">
+                                                                    <input type="text" autocomplete="off" class="search" id="city-input" required/>
+                                                                    <span>Ingrese su cuidad</span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-md-2"  id="weather-info">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="btn-group">
+                                                        <button type="submit" id="searchPokemon" class="btn
+                                                                enter">
+                                                            <li class="fa
+                                                                    fa-search"></li>Buscar
+                                                    </button>
+                                                        <button type="button" class="btn
+                                                                enter" data-bs-dismiss="modal"
+                                                            aria-label="Close">Cerrar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </section>
+
+
+
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <!-- Copy the content below until next comment -->
+                        <div class="card card-custom
+                                    bg-white
+                                    border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                            </div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                        auto">
+                                <h4 class="card-title">Pokemon</h4>
+                                <p class="card-text">Este
+                                    proyecto trata de buscar
+                                    un pokemon
+                                    utilizando la Poke Api
+                                    <a>la busqueda de vuelve</a>
+                                    datos generales del
+                                    pokemon.
+                                </p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                        inherit; border-color:
+                                        inherit;">
+                                <a href="#" class="btn
+                                            btn-primary">Buscar
+                                    Pokemon</a>
+                            </div>
+                            <!-- Copy until here -->
+                        </div>
+                    </section>
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <!-- Copy the content below until next comment -->
+                        <div class="card card-custom
+                                    bg-white
+                                    border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                            </div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                        auto">
+                                <h4 class="card-title">Pokemon</h4>
+                                <p class="card-text">Este
+                                    proyecto trata de buscar
+                                    un pokemon
+                                    utilizando la Poke Api
+                                    <a>la busqueda de vuelve</a>
+                                    datos generales del
+                                    pokemon.
+                                </p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                        inherit; border-color:
+                                        inherit;">
+                                <a href="#" class="btn
+                                            btn-primary">Buscar
+                                    Pokemon</a>
+                            </div>
+                            <!-- Copy until here -->
+                        </div>
+                    </section>
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <!-- Copy the content below until next comment -->
+                        <div class="card card-custom
+                                    bg-white
+                                    border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                            </div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                        auto">
+                                <h4 class="card-title">Pokemon</h4>
+                                <p class="card-text">Este
+                                    proyecto trata de buscar
+                                    un pokemon
+                                    utilizando la Poke Api
+                                    <a>la busqueda de vuelve</a>
+                                    datos generales del
+                                    pokemon.
+                                </p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                        inherit; border-color:
+                                        inherit;">
+                                <a href="#" class="btn
+                                            btn-primary">Buscar
+                                    Pokemon</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+<script src="js/clima.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>

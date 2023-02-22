@@ -1,44 +1,69 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <title>Incio</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
             rel="stylesheet">
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Inicio</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wrape d-flex align-items-stretch">
+
+        <div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar">
                 <div class="p-4 pt-5">
-                    <a class="img logo rounded-circle" style="background-image:
-                        url(img/logo.jpg)"></a>
+                    <a href="#" class="img logo rounded-circle mb-5"
+                        style="background-image: url(img/logo.jpg);"></a>
                     <ul class="list-unstyled components mb-5">
                         <li class="active">
-                            <a href="">Inicio</a>
+                            <a href="index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="acerca.html">Acerca de</a>
+                            <a href="acerca.html">Acerca</a>
                         </li>
-                        <li><a href="">Portafolio</a></li>
-                        <li><a href="">Contacto</a></li>
-
+                        <li>
+                            <a href="portafolio.html">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
+
                     <div class="footer">
                         <p>
-                            Todos los derechos reservados <script>document.write(new Date().getFullYear());</script>
+                            Copyright <script>document.write(new Date().getFullYear());</script>
+                            Todos los derechos reservados <i
+                                class="fa fa-github" aria-hidden="true"></i> <a
+                                href="https://github.com/juan052" target="_blank">Github</a>
                         </p>
                     </div>
+
                 </div>
             </nav>
-            <div id="content" class="p-4 p-md-5">
+
+            <!-- Page Content  -->
+            <div id="content" class="p-4 p-md-5 nave">
+                <nav class="navbar navbar-expand-lg nave" style="background-color: transparent;">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="btn
+                            btn-primary">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only"> Menu</span>
+                        </button>
+                     
+                        
+                    </div>
+                </nav>
+
                 <div class="container-xxl py-5">
                     <div class="container">
                         <div class="row g-5 align-items-center">
@@ -84,12 +109,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src=""></script>
-        <script src="js/main.js"></script>
-    </body>
-</html>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+        </body>
+    </html>
