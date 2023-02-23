@@ -9156,6 +9156,7 @@ p {
 .section-title {
   position: relative;
   display: inline-block;
+  font-family: "Anton", sans-serif;
 }
 
 .section-title::before {

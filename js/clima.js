@@ -1,43 +1,33 @@
-const form = document.querySelector('#search-form');
-form.addEventListener('submit', getWeather);
+const apiKey = "2697dd39f625b16c7a0006cbf98fb849";
 
-function getWeather(event) {
-    event.preventDefault();
-  
-    const cityInput = document.querySelector('#city-input');
-    const city = cityInput.value;
-  
-    const apiKey = '2697dd39f625b16c7a0006cbf98fb849'; // Reemplaza con tu propia API key
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-  
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        const weatherInfo = document.querySelector('#weather-info');
-        weatherInfo.innerHTML = '';
-  
-        const cityName = document.createElement('h2');
-        cityName.textContent = data.name;
-        weatherInfo.appendChild(cityName);
-  
-        const temperature = document.createElement('p');
-        temperature.textContent = `Temperatura actual: ${data.main.temp}°C`;
-        weatherInfo.appendChild(temperature);
-  
-        const description = document.createElement('p');
-        description.textContent = `Descripción: ${data.weather[0].description}`;
-        weatherInfo.appendChild(description);
-  
-        const iconCode = data.weather[0].icon;
-        const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
-        const iconImage = document.createElement('img');
-        iconImage.src = iconUrl;
-        weatherInfo.appendChild(iconImage);
-      })
-      .catch(error => {
-        console.error('Error al obtener los datos del clima', error);
-        const weatherInfo = document.querySelector('#weather-info');
-        weatherInfo.innerHTML = '<p>Error al obtener los datos del clima</p>';
-      });
-  }
-  
+var input = document.querySelector('.input_text');
+var main = document.querySelector('#name');
+var temp = document.querySelector('.temp');
+var desc = document.querySelector('.desc');
+var wind = document.querySelector('.Wind');
+var humidity = document.querySelector('.Humidity')
+var clouds = document.querySelector('.clouds');
+var button = document.querySelector('.submit');
+
+
+button.addEventListener('click', function (name) {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`)
+    .then(response => response.json())
+    .then(data => {
+      var tempValue = data['main']['temp'];
+      var nameValue = data['name'];
+      var descValue = data['weather'][0]['description'];
+      var windValue = data['wind']['speed'];
+      var humidityValue = data['main']['humidity'];
+      var iconValue = data['weather'][0]['icon'];
+      main.innerHTML = nameValue;
+      desc.innerHTML = "Desc - " + descValue;
+      temp.innerHTML = "Temperatura - " + tempValue + "°C";
+      wind.innerHTML = "Velocidad del viento - " + windValue + " km/h";
+      humidity.innerHTML = "Humedad - " + humidityValue + " %";
+      var iconUrl = `http://openweathermap.org/img/w/${iconValue}.png`;
+      document.getElementById('weather-icon').setAttribute('src', iconUrl);
+      input.value = "";
+    })
+    .catch(err => alert("Ha ocurrido un error!"));
+});

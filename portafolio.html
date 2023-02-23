@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/blobz.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portafolio</title>
 </head>
@@ -32,10 +31,10 @@
                             <a class="nav-link" href="acerca.html">Acerca</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Portafolio</a>
+                            <a class="nav-link" href="portafolio.html">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -185,17 +184,15 @@
                                 style="background-image:
                                     url(https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844226_960_720.png);"></div>
                             <div class="card-custom-avatar">
-                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                                <img class="img-fluid" src="img/nube.png" alt="Avatar" />
                             </div>
                             <div class="card-body" style="overflow-y:
                                     auto">
-                                <h4 class="card-title">Tiempo</h4>
+                                <h4 class="card-title">Clima</h4>
                                 <p class="card-text">Este
-                                    proyecto trata de buscar un
-                                    pokemon
-                                    utilizando la Poke Api <a>la
+                                    proyecto trata de conocer el clima de diferentes cuidades del mundo <a>la
                                         busqueda de vuelve</a>
-                                    datos generales del pokemon.</p>
+                                    datos generales del clima.</p>
                             </div>
                             <div class="card-footer" style="background:
                                     inherit; border-color:
@@ -226,55 +223,164 @@
                                                     <div class="row g-0">
                                                         <div class="col-md-12">
                                                         </div>
-                                                        <div class="search-form form-group">
-                                                            <form id="search-form">
-                                                                <div class="searchbox inputBox">
-                                                                    <input type="text" autocomplete="off" class="search" id="city-input" required/>
-                                                                    <span>Ingrese su cuidad</span>
+                                                        <div class="search-form
+                                                                top-banner
+                                                                form-group">
+                                                            <form id="search-form" class="">
+                                                                <div class="searchbox
+                                                                        inputBox">
+                                                                    <input type="text" autocomplete="false" autofocus
+                                                                        required class="input_text">
+                                                                    <span>Ingrese
+                                                                        su
+                                                                        cuidad</span>
                                                                 </div>
                                                             </form>
                                                         </div>
-                                                        <div class="col-md-2"  id="weather-info">
-                                                            
+                                                        <div class="col-md-2" id="">
+                                                          
+                                                            <div class="card" style="width:
+                                                                    18rem;">
+                                                                <img class="card-img-top" src="" id="weather-icon">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title name" id="name"></h5>
+                                                                    <p class="card-text ">
+                                                                       </p>
+                                                                </div>
+                                                                <ul class="list-group
+                                                                        list-group-flush">
+                                                                    <li class="list-group-item temp"></li>
+                                                                    <li class="list-group-item clouds"></li>
+                                                                    <li class="list-group-item desc">
+                                                                      </li>
+                                                                      <li class="list-group-item Wind">
+                                                                    </li>
+                                                                    <li class="list-group-item Humidity">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <div class="btn-group">
-                                                        <button type="submit" id="searchPokemon" class="btn
-                                                                enter">
-                                                            <li class="fa
-                                                                    fa-search"></li>Buscar
-                                                    </button>
-                                                        <button type="button" class="btn
-                                                                enter" data-bs-dismiss="modal"
-                                                            aria-label="Close">Cerrar</button>
+                                                    <div class="modal-footer">
+                                                        <div class="btn-group">
+                                                            <input type="submit" value="Submit" class="submit
+                                                                    btn enter ">
+                                                            <button type="button" class="btn
+                                                                    enter" data-bs-dismiss="modal"
+                                                                aria-label="Close">Cerrar</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
-
-                            </div>
                     </section>
-
-
-
                     <section class="col-md-6 col-lg-4 pb-3">
                         <!-- Copy the content below until next comment -->
                         <div class="card card-custom
-                                    bg-white
-                                    border-white border-0">
+                                        bg-white
+                                        border-white border-0">
                             <div class="card-custom-img"
                                 style="background-image:
-                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                                            url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
                             </div>
                             <div class="card-custom-avatar">
                                 <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
                             </div>
                             <div class="card-body" style="overflow-y:
-                                        auto">
+                                            auto">
+                                <h4 class="card-title">Calculadora con js</h4>
+                                <p class="card-text">Calcudora con js que hace operaciones basicas
+                                   
+                                </p>
+                            </div>
+                            <div class="card-footer" style="background:
+                                            inherit; border-color:
+                                            inherit;">
+                                  <button type="button" class="btn
+                                  btn-primary" data-toggle="modal" data-target="#modal-calculadora">
+                        calcular
+                          </button>
+                          <div class="modal fade" id="modal-calculadora">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Calculadora
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container
+                                                shadow-sm">
+                                                <div class="conteudo">
+                                                    <div class="calculadora">
+                                                        <header class="opcoes__janela">
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                        </header>
+                                                        <main class="conteudo__botoes">
+                                                            <input type="text" placeholder="0" class="js-resultado" />
+                                                            <a class="botoes__iniciais js-btn-ac">AC</a>
+                                                            <a class="botoes__iniciais js-btn-del">DEL</a>
+                                                            <a class="botoes__iniciais js-btn-mais-menos">+/-</a>
+                                                            <a class="js-btn-padroes" data-valor="/">÷</a>
+                                                            <a class="js-btn-padroes" data-valor="7">7</a>
+                                                            <a class="js-btn-padroes" data-valor="8">8</a>
+                                                            <a class="js-btn-padroes" data-valor="9">9</a>
+                                                            <a class="js-btn-padroes" data-valor="*">x</a>
+                                                            <a class="js-btn-padroes" data-valor="4">4</a>
+                                                            <a class="js-btn-padroes" data-valor="5">5</a>
+                                                            <a class="js-btn-padroes" data-valor="6">6</a>
+                                                            <a class="js-btn-padroes" data-valor="-">-</a>
+                                                            <a class="js-btn-padroes" data-valor="1">1</a>
+                                                            <a class="js-btn-padroes" data-valor="2">2</a>
+                                                            <a class="js-btn-padroes" data-valor="3">3</a>
+                                                            <a class="js-btn-padroes" data-valor="+">+</a>
+                                                            <a class="js-btn-padroes grid-span-2 borda-radius-esquerda" data-valor="0">0</a>
+                                                            <a class="js-btn-padroes" data-valor=".">.</a>
+                                                            <a class="js-btn-igual borda-radius-direita">=</a>
+                                                        </main>
+                                                    </div>
+                                                </div>
+                                            <div class="modal-footer">
+                                                <div class="btn-group">
+                                                    
+                                                    <button type="button" class="btn
+                                                            enter" data-bs-dismiss="modal"
+                                                        aria-label="Close">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- Copy until here -->
+
+                        </div>
+
+                      
+                    </section>
+                    <section class="col-md-6 col-lg-4 pb-3">
+                        <!-- Copy the content below until next comment -->
+                        <div class="card card-custom
+                                        bg-white
+                                        border-white border-0">
+                            <div class="card-custom-img"
+                                style="background-image:
+                                            url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                            </div>
+                            <div class="card-custom-avatar">
+                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
+                            </div>
+                            <div class="card-body" style="overflow-y:
+                                            auto">
                                 <h4 class="card-title">Pokemon</h4>
                                 <p class="card-text">Este
                                     proyecto trata de buscar
@@ -286,10 +392,10 @@
                                 </p>
                             </div>
                             <div class="card-footer" style="background:
-                                        inherit; border-color:
-                                        inherit;">
+                                            inherit; border-color:
+                                            inherit;">
                                 <a href="#" class="btn
-                                            btn-primary">Buscar
+                                                btn-primary">Buscar
                                     Pokemon</a>
                             </div>
                             <!-- Copy until here -->
@@ -298,17 +404,17 @@
                     <section class="col-md-6 col-lg-4 pb-3">
                         <!-- Copy the content below until next comment -->
                         <div class="card card-custom
-                                    bg-white
-                                    border-white border-0">
+                                        bg-white
+                                        border-white border-0">
                             <div class="card-custom-img"
                                 style="background-image:
-                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                                            url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
                             </div>
                             <div class="card-custom-avatar">
                                 <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
                             </div>
                             <div class="card-body" style="overflow-y:
-                                        auto">
+                                            auto">
                                 <h4 class="card-title">Pokemon</h4>
                                 <p class="card-text">Este
                                     proyecto trata de buscar
@@ -320,44 +426,10 @@
                                 </p>
                             </div>
                             <div class="card-footer" style="background:
-                                        inherit; border-color:
-                                        inherit;">
+                                            inherit; border-color:
+                                            inherit;">
                                 <a href="#" class="btn
-                                            btn-primary">Buscar
-                                    Pokemon</a>
-                            </div>
-                            <!-- Copy until here -->
-                        </div>
-                    </section>
-                    <section class="col-md-6 col-lg-4 pb-3">
-                        <!-- Copy the content below until next comment -->
-                        <div class="card card-custom
-                                    bg-white
-                                    border-white border-0">
-                            <div class="card-custom-img"
-                                style="background-image:
-                                        url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
-                            </div>
-                            <div class="card-custom-avatar">
-                                <img class="img-fluid" src="img/pokemon.svg" alt="Avatar" />
-                            </div>
-                            <div class="card-body" style="overflow-y:
-                                        auto">
-                                <h4 class="card-title">Pokemon</h4>
-                                <p class="card-text">Este
-                                    proyecto trata de buscar
-                                    un pokemon
-                                    utilizando la Poke Api
-                                    <a>la busqueda de vuelve</a>
-                                    datos generales del
-                                    pokemon.
-                                </p>
-                            </div>
-                            <div class="card-footer" style="background:
-                                        inherit; border-color:
-                                        inherit;">
-                                <a href="#" class="btn
-                                            btn-primary">Buscar
+                                                btn-primary">Buscar
                                     Pokemon</a>
                             </div>
                         </div>
@@ -372,8 +444,11 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-<script src="js/clima.js"></script>
+    <script src="js/clima.js"></script>
     <script src="js/api.js"></script>
+    <script src="js/calculadora.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/wow/wow.js"></script>
 </body>
 
 </html>

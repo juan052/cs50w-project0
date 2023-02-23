@@ -244,6 +244,7 @@ p {
 .section-title {
     position: relative;
     display: inline-block;
+    font-family: $font-secondary;
 }
 
 .section-title::before {
@@ -344,13 +345,15 @@ p {
 }
 
 .inputBox,
-.inputBox1 {
+.inputBox1,
+.inputText {
     position: relative;
     width: 250px;
 }
 
 .inputBox input,
-.inputBox1 input {
+.inputBox1 input,
+.inputTex textarea {
     width: 100%;
     padding: 10px;
     outline: none;
@@ -365,7 +368,8 @@ p {
 }
 
 .inputBox span,
-.inputBox1 span {
+.inputBox1 span,
+.inputTex span {
     margin-top: 5px;
     position: absolute;
     left: 0;
@@ -382,7 +386,8 @@ p {
 }
 
 .inputBox input:valid~span,
-.inputBox input:focus~span {
+.inputBox input:focus~span,
+.inputTex textarea:focus~span {
     transform: translateX(113px) translateY(-15px);
     font-size: 0.8em;
     padding: 5px 10px;
@@ -393,7 +398,8 @@ p {
 }
 
 .inputBox1 input:valid~span,
-.inputBox1 input:focus~span {
+.inputBox1 input:focus~span
+.inputTex  textarea:focus~span {
     transform: translateX(156px) translateY(-15px);
     font-size: 0.8em;
     padding: 5px 10px;
@@ -406,7 +412,9 @@ p {
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox1 input:valid,
-.inputBox1 input:focus {
+.inputBox1 input:focus,
+.inputText textarea:valid,
+.inputText textarea:focus {
     border: 2px solid #000;
     border-radius: 8px;
 }
