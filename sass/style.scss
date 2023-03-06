@@ -217,8 +217,10 @@ a[data-toggle="collapse"] {
 
 
 .btn {
+    margin-top: 5%;
     &.btn-primary {
         background: $primary;
+        
         border-color: $primary;
 
         &:hover,
@@ -555,3 +557,4 @@ p {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
+/*Medias query**/

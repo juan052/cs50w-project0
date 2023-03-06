@@ -1,4 +1,4 @@
-:root {
+.modal {
     --cor-background: #ecf0f3;
     --cor-branco: #ffffff;
     --cor-sombra-padrao: rgba(0, 0, 0, 0.16);
@@ -29,21 +29,21 @@
     outline: none;
   }
   
-  .conteudo {
+  .contenedor {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .conteudo .calculadora {
+  .contenedor .calculadora {
     border: 1px solid var(--cor-borda-calculadora);
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 12px var(--cor-sombra-padrao);
   }
   
-  .conteudo .calculadora .opcoes__janela {
+  .contenedor .calculadora .opcoes__janela {
     display: flex;
     position: absolute;
     top: 7px;
@@ -52,7 +52,7 @@
     column-gap: 7px;
   }
   
-  .conteudo .calculadora .opcoes__janela div {
+  .contenedor .calculadora .opcoes__janela div {
     width: 12px;
     height: 12px;
     background-color: red;
@@ -60,7 +60,7 @@
     position: relative;
   }
   
-  .conteudo .calculadora .opcoes__janela div::after {
+  .contenedor .calculadora .opcoes__janela div::after {
     content: "";
     display: flex;
     align-items: center;
@@ -70,39 +70,39 @@
     cursor: pointer;
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(1) {
+  .contenedor .calculadora .opcoes__janela div:nth-child(1) {
     background-color: var(--cor-botao-fechar);
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(2) {
+  .contenedor .calculadora .opcoes__janela div:nth-child(2) {
     background-color: var(--cor-botao-minimizar);
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(3) {
+  .contenedor .calculadora .opcoes__janela div:nth-child(3) {
     background-color: var(--cor-botao-maximizar);
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(1):hover:after {
+  .contenedor .calculadora .opcoes__janela div:nth-child(1):hover:after {
     content: "x";
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(2):hover:after {
+  .contenedor .calculadora .opcoes__janela div:nth-child(2):hover:after {
     content: "-";
     line-height: 12px;
     font-size: 12px;
   }
   
-  .conteudo .calculadora .opcoes__janela div:nth-child(3):hover:after {
+  .contenedor .calculadora .opcoes__janela div:nth-child(3):hover:after {
     content: "+";
   }
   
-  .conteudo .calculadora .conteudo__botoes {
+  .contenedor .calculadora .conteudo__botoes {
     display: grid;
     background-color: var(--cor-input-resultado);
     border-radius: 10px;
   }
   
-  .conteudo .calculadora .conteudo__botoes input {
+  .contenedor .calculadora .conteudo__botoes input {
     grid-column: span 4;
     height: 70px;
     width: 260px;
@@ -117,12 +117,12 @@
     font-weight: 200;
   }
   
-  .conteudo .calculadora .conteudo__botoes input::placeholder {
+  .contenedor .calculadora .conteudo__botoes input::placeholder {
     color: var(--cor-branco);
     opacity: 1; /* para firefox */
   }
   
-  .conteudo .calculadora .conteudo__botoes a {
+  .contenedor .calculadora .conteudo__botoes a {
     height: 50px;
     width: 70px;
     display: flex;
@@ -137,32 +137,31 @@
     border-top: 1px solid var(--cor-borda-botoes);
     user-select: none;
   }
-  
-  .conteudo .calculadora .conteudo__botoes a:hover {
+  enedor .calculadora .conteudo__botoes a:hover {
     background-color: var(--cor-botao-normal-hover);
   }
   
-  .conteudo .calculadora .conteudo__botoes a.grid-span-2 {
+  .contenedor .calculadora .conteudo__botoes a.grid-span-2 {
     grid-column: span 2;
     width: 100%;
   }
   
-  .conteudo .calculadora .conteudo__botoes a.botoes__iniciais {
+  .contenedor .calculadora .conteudo__botoes a.botoes__iniciais {
     background-color: var(--cor-botao-topo-cinza-escuro);
   }
   
-  .conteudo .calculadora .conteudo__botoes a.botoes__iniciais:hover {
+  .contenedor .calculadora .conteudo__botoes a.botoes__iniciais:hover {
     background-color: var(--cor-botao-topo-cinza-escuro-hover);
   }
   
-  .conteudo .calculadora .conteudo__botoes a:nth-child(4n + 1),
-  .conteudo .calculadora .conteudo__botoes a:last-child {
+  .contenedor .calculadora .conteudo__botoes a:nth-child(4n + 1),
+  .contenedor .calculadora .conteudo__botoes a:last-child {
     background-color: var(--cor-botao-laranja);
     border-right: none;
   }
   
-  .conteudo .calculadora .conteudo__botoes a:nth-child(4n + 1):hover,
-  .conteudo .calculadora .conteudo__botoes a:last-child:hover {
+  .contenedor .calculadora .conteudo__botoes a:nth-child(4n + 1):hover,
+  .contenedor .calculadora .conteudo__botoes a:last-child:hover {
     background-color: var(--cor-botao-laranja-hover);
   }
   
